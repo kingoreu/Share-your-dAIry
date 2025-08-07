@@ -4,17 +4,27 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c8d60022-39d6-44db-9ec4-bef16608d6f3" name="Changes" comment="">
-<<<<<<< Updated upstream
+    <list default="true" id="bd5c5e06-017c-4306-bf21-319e40c3e458" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dairy/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/dairy/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dairy/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/dairy/.idea/workspace.xml" afterDir="false" />
-=======
-      <change afterPath="$PROJECT_DIR$/dairy/src/main/resources/com/dairy/dairy/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dairy/src/main/java/com/dairy/dairy/MoodGraphController.java" beforeDir="false" afterPath="$PROJECT_DIR$/dairy/src/main/java/com/dairy/dairy/MoodGraphController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dairy/src/main/resources/com/dairy/dairy/mood-graph-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/dairy/src/main/resources/com/dairy/dairy/mood-graph-view.fxml" afterDir="false" />
->>>>>>> Stashed changes
+      <change beforePath="$PROJECT_DIR$/dairy/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dairy/src/main/java/com/dairy/dairy/BuddyDiaryController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dairy/src/main/java/com/dairy/dairy/HelloApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dairy/src/main/java/com/dairy/dairy/HomeController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dairy/src/main/java/com/dairy/dairy/Launcher.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dairy/src/main/java/com/dairy/dairy/MainController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dairy/src/main/java/com/dairy/dairy/MoodGraphController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dairy/src/main/java/com/dairy/dairy/MyDiaryController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dairy/src/main/java/com/dairy/dairy/OurDiaryController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dairy/src/main/java/com/dairy/dairy/SettingsController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dairy/src/main/resources/com/dairy/dairy/Main.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dairy/src/main/resources/com/dairy/dairy/buddy-diary-view.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dairy/src/main/resources/com/dairy/dairy/hello-view.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dairy/src/main/resources/com/dairy/dairy/home-view.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dairy/src/main/resources/com/dairy/dairy/mood-graph-view.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dairy/src/main/resources/com/dairy/dairy/my-diary-view.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dairy/src/main/resources/com/dairy/dairy/our-diary-view.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dairy/src/main/resources/com/dairy/dairy/settings-view.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dairy/src/main/resources/com/dairy/dairy/style.css" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,50 +46,43 @@
     &quot;accountId&quot;: &quot;20bc2043-6893-4e62-9697-96436db80c29&quot;
   }
 }</component>
-  <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 8
-}</component>
-  <component name="ProjectId" id="30wnc1o6UKJMN18VsMSiQuTu2kQ" />
-  <component name="ProjectLevelVcsManager">
-    <ConfirmationsSetting value="2" id="Add" />
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="ProjectErrors" />
   </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 0
+}</component>
+  <component name="ProjectId" id="30x1CXN4etR0kRK8kxppc4HoVFU" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;Application.HelloApplication.executor&quot;: &quot;Run&quot;,
     &quot;Application.run.executor&quot;: &quot;Run&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;이민우&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Java/myjava/Share-your-Dairy&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;configurable.group.editor&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
   <component name="RunManager">
-    <configuration name="run" type="Application" factoryName="Application">
-      <option name="ALTERNATIVE_JRE_PATH" value="21" />
+    <configuration name="run" type="Application" factoryName="Application" activateToolWindowBeforeRun="false">
+      <option name="ALTERNATIVE_JRE_PATH" value="$PROJECT_DIR$/../../jdk-21" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-      <option name="MAIN_CLASS_NAME" value="com.dairy.dairy.HelloApplication" />
+      <option name="MAIN_CLASS_NAME" value="com.share.dairy.HelloApplication" />
       <module name="dairy" />
       <option name="VM_PARAMETERS" value="--module-path &quot;C:\Java\javafx-sdk-21.0.8\lib&quot; --add-modules javafx.controls,javafx.fxml " />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/dairy" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.dairy.dairy.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -95,17 +98,12 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="c8d60022-39d6-44db-9ec4-bef16608d6f3" name="Changes" comment="" />
-      <created>1754547578688</created>
+      <changelist id="bd5c5e06-017c-4306-bf21-319e40c3e458" name="Changes" comment="" />
+      <created>1754554284806</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1754547578688</updated>
-<<<<<<< Updated upstream
-      <workItem from="1754547579784" duration="1471000" />
-      <workItem from="1754552256112" duration="11000" />
-=======
-      <workItem from="1754547579784" duration="4070000" />
->>>>>>> Stashed changes
+      <updated>1754554284806</updated>
+      <workItem from="1754554286551" duration="2117000" />
     </task>
     <servers />
   </component>
