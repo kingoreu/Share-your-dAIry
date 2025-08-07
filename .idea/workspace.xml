@@ -5,9 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c8d60022-39d6-44db-9ec4-bef16608d6f3" name="Changes" comment="">
+<<<<<<< Updated upstream
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dairy/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/dairy/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dairy/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/dairy/.idea/workspace.xml" afterDir="false" />
+=======
+      <change afterPath="$PROJECT_DIR$/dairy/src/main/resources/com/dairy/dairy/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dairy/src/main/java/com/dairy/dairy/MoodGraphController.java" beforeDir="false" afterPath="$PROJECT_DIR$/dairy/src/main/java/com/dairy/dairy/MoodGraphController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dairy/src/main/resources/com/dairy/dairy/mood-graph-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/dairy/src/main/resources/com/dairy/dairy/mood-graph-view.fxml" afterDir="false" />
+>>>>>>> Stashed changes
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,6 +62,7 @@
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;configurable.group.editor&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
@@ -92,8 +100,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1754547578688</updated>
+<<<<<<< Updated upstream
       <workItem from="1754547579784" duration="1471000" />
       <workItem from="1754552256112" duration="11000" />
+=======
+      <workItem from="1754547579784" duration="4070000" />
+>>>>>>> Stashed changes
     </task>
     <servers />
   </component>
