@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c8d60022-39d6-44db-9ec4-bef16608d6f3" name="Changes" comment="" />
+    <list default="true" id="c8d60022-39d6-44db-9ec4-bef16608d6f3" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dairy/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/dairy/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dairy/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/dairy/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -29,6 +33,9 @@
   &quot;associatedIndex&quot;: 8
 }</component>
   <component name="ProjectId" id="30wnc1o6UKJMN18VsMSiQuTu2kQ" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -39,7 +46,7 @@
     &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;#2 on 이민우&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;이민우&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
     &quot;last_opened_file_path&quot;: &quot;C:/Java/myjava/Share-your-Dairy&quot;,
@@ -86,6 +93,7 @@
       <option name="presentableId" value="Default" />
       <updated>1754547578688</updated>
       <workItem from="1754547579784" duration="1471000" />
+      <workItem from="1754552256112" duration="11000" />
     </task>
     <servers />
   </component>
