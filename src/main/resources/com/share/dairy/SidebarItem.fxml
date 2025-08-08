@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<!--
+  fx:root 방식: FXMLLoader#setRoot(this) 와 호환
+  타입은 StackPane
+-->
+<fx:root xmlns="http://javafx.com/javafx"
+         xmlns:fx="http://javafx.com/fxml"
+         type="javafx.scene.layout.StackPane"
+         styleClass="sidebar-item">
+
+    <!-- 배경 Region (핑크 + 둥근 모서리 + 그림자) -->
+    <Region fx:id="sidebarItemBg" styleClass="sidebar-item-bg"/>
+
+    <!-- 아이콘 + 텍스트 -->
+    <VBox alignment="CENTER" spacing="4">
+        <ImageView fx:id="iconView"
+                   fitWidth="46" fitHeight="46"
+                   pickOnBounds="true"/>
+        <Label fx:id="textLabel" styleClass="sidebar-item-text"/>
+    </VBox>
+</fx:root>

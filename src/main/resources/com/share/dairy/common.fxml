@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+<?import com.share.dairy.SidebarItem?>
+
+<!--
+  공통 UI 레이아웃:
+   ┌─────────────────────────┐
+   │ [Home Icon]   Page Title │ ← Header
+   │ ──────────────────────── │
+   │ │Sidebar│   Content    │ │ ← Sidebar + Content
+   │ │ Items  │              │ │
+   │ └────────┴──────────────┘ │
+-->
+
+<?import javafx.geometry.Insets?>
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.share.dairy.CommonController"
+            styleClass="common-pane">
+
+    <!-- ───────── TOP: 헤더 ───────── -->
+    <top>
+        <VBox>
+            <HBox styleClass="header-box">
+                <!-- 홈 아이콘 클릭 시 onHomeClicked() 호출 -->
+                <ImageView fx:id="homeIcon"
+                           fitWidth="40" fitHeight="40"
+                           pickOnBounds="true"
+                           onMouseClicked="#onHomeClicked"
+                           styleClass="clickable">
+                    <image>
+                        <Image url="@../images/home-icon.png"/>
+                    </image>
+                    <HBox.margin>
+                        <Insets top="0" right="5" bottom="0" left="25"/>
+                    </HBox.margin>
+                </ImageView>
+                <!-- 스페이서: 제목을 가운데로 배치 -->
+                <Region HBox.hgrow="ALWAYS"/>
+                <Label fx:id="pageTitle"
+                       text="구리구리's Buddy List"
+                       styleClass="page-title"/>
+                <Region HBox.hgrow="ALWAYS"/>
+            </HBox>
+            <Separator styleClass="header-separator"/>
+        </VBox>
+    </top>
+
+    <!-- ───────── LEFT: 사이드바 ───────── -->
+    <left>
+        <!-- VBox + Region 으로 위-가운데-아래 배치 -->
+        <VBox styleClass="sidebar-box">
+            <!-- 상단 아이템 (MY Info) -->
+            <SidebarItem fx:id="itemMyInfo"/>
+            <!-- 빈 공간: vgrow=ALWAYS 로 늘어나서 가운데 아이템을 밀어냄 -->
+            <Region VBox.vgrow="ALWAYS"/>
+            <!-- 가운데 아이템 (ADD Friends) -->
+            <SidebarItem fx:id="itemAddFriends"/>
+            <!-- 빈 공간 -->
+            <Region VBox.vgrow="ALWAYS"/>
+            <!-- 하단 아이템 (BUDDY List) -->
+            <SidebarItem fx:id="itemBuddyList"/>
+        </VBox>
+    </left>
+
+    <!-- ───────── CENTER: 실제 컨텐츠 자리 ───────── -->
+    <center>
+        <Region fx:id="contentRegion"/>
+    </center>
+
+</BorderPane>

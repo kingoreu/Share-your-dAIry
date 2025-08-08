@@ -1,0 +1,61 @@
+/* ───────── 전체 배경 ───────── */
+.common-pane {
+    -fx-background-color: rgba(251,235,246,1);
+}
+
+/* ───────── 헤더 스타일 ───────── */
+.header-box {
+    -fx-padding: 10 20;         /* 위/아래 10, 좌/우 20 */
+    -fx-alignment: CENTER_LEFT; /* 왼쪽 정렬 + 수직 중앙 정렬 */
+    -fx-spacing: 10;            /* 아이콘↔제목 간격 */
+}
+
+.header-separator {
+    /* 배경 부분은 투명 처리 */
+    -fx-background-color: transparent;
+    -fx-pref-height: 2;
+
+    /* border 아래쪽만 그리기 */
+    -fx-border-color: #333;
+    -fx-border-width: 0 0 2 0;
+    -fx-border-insets: 0 20 0 20;
+    -fx-border-radius: 0;
+}
+.page-title {
+    -fx-font-family: "Arial";
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #333;
+}
+.clickable {
+    -fx-cursor: hand;           /* 클릭 가능한 요소에 손 커서 */
+}
+
+/* ───────── 사이드바 컨테이너 ───────── */
+.sidebar-box {
+    -fx-background-color: transparent; /* common-pane 배경 투명하게 비침 */
+    /*  위쪽, 오른쪽, 아래쪽, 왼쪽 순서임 */
+    -fx-padding: 40 0 40 15;
+    -fx-alignment: TOP_CENTER;
+}
+
+/* ───────── SidebarItem 공통 ───────── */
+.sidebar-item {
+    -fx-cursor: hand;
+    -fx-alignment: CENTER;
+}
+.sidebar-item-bg {
+    -fx-background-color: rgba(238,183,199,1);
+    -fx-background-radius: 30;
+    -fx-pref-width: 100px;   /* 120 → 160 으로 키움 */
+    -fx-pref-height: 120px;  /*  80 → 100 으로 키움 */
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 4,0,0,2);
+}
+.sidebar-item-text {
+    -fx-font-family: "Arial";
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;   /* 필요 시 weight도 같이 지정 */
+    -fx-text-fill: #333;
+    -fx-wrap-text: true;
+    -fx-text-alignment: CENTER;
+}
