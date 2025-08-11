@@ -4,11 +4,99 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c8d60022-39d6-44db-9ec4-bef16608d6f3" name="Changes" comment="" />
+    <list default="true" id="ce0d884a-17a6-433f-98e7-bc5d2721af8c" name="변경" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/share/dairy/TestDB.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/share/dairy/dao/diary/DiaryAnalysisDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/share/dairy/dao/diary/DiaryAttachmentDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/share/dairy/dao/diary/DiaryEntryDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/share/dairy/dao/friend/FriendshipDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/share/dairy/dao/keyword/KeywordDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/share/dairy/dao/keyword/KeywordImageDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/share/dairy/dao/sharedDiary/SharedDiaryDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/share/dairy/dao/sharedDiary/SharedDiaryMemberDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/share/dairy/dao/user/UserDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/share/dairy/mapper/RowMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/share/dairy/mapper/diary/DiaryAnalysisMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/share/dairy/mapper/diary/DiaryAttachmentMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/share/dairy/mapper/diary/DiaryCommentMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/share/dairy/mapper/diary/DiaryEntryMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/share/dairy/mapper/friend/FriendshipMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/share/dairy/mapper/keyword/KeywordImageMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/share/dairy/mapper/keyword/KeywordMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/share/dairy/mapper/sharedDiary/SharedDiaryMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/share/dairy/mapper/sharedDiary/SharedDiaryMemberMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/share/dairy/mapper/user/UserMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/share/dairy/model/diary/DiaryAnalysis.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/share/dairy/model/diary/DiaryAttachment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/share/dairy/model/diary/DiaryComment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/share/dairy/model/diary/DiaryEntry.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/share/dairy/model/enums/AttachmentType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/share/dairy/model/enums/FriendshipStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/share/dairy/model/enums/Visibility.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/share/dairy/model/friend/Friendship.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/share/dairy/model/keyword/Keyword.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/share/dairy/model/keyword/KeywordImage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/share/dairy/model/sharedDiary/SharedDiary.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/share/dairy/model/sharedDiary/SharedDiaryMember.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/share/dairy/model/user/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/share/dairy/service/diary/DiaryWriteService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/share/dairy/service/friend/FriendshipService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/share/dairy/util/DBConnection.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/share/dairy/util/Tx.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/db_properties/db.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sql/dairy.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sql/dairy_drop.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sql/dairy_trigger.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dairy/.gitattributes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dairy/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dairy/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dairy/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dairy/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dairy/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dairy/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dairy/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dairy/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dairy/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dairy/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dairy/src/main/java/com/dairy/dairy/BuddyDiaryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/share/dairy/controller/BuddyDiaryController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dairy/src/main/java/com/dairy/dairy/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/share/dairy/app/HelloApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dairy/src/main/java/com/dairy/dairy/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/share/dairy/controller/HomeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dairy/src/main/java/com/dairy/dairy/Launcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/share/dairy/app/Launcher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dairy/src/main/java/com/dairy/dairy/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/share/dairy/controller/MainController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dairy/src/main/java/com/dairy/dairy/MoodGraphController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/share/dairy/controller/MoodGraphController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dairy/src/main/java/com/dairy/dairy/MyDiaryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/share/dairy/controller/MyDiaryController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dairy/src/main/java/com/dairy/dairy/OurDiaryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/share/dairy/controller/OurDiaryController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dairy/src/main/java/com/dairy/dairy/SettingsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/share/dairy/controller/SettingsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dairy/src/main/resources/com/dairy/dairy/Main.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/mainFrame/Main.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dairy/src/main/resources/com/dairy/dairy/buddy-diary-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/diary/buddy_diary/buddy-diary-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dairy/src/main/resources/com/dairy/dairy/hello-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/diary/our_diary/hello-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dairy/src/main/resources/com/dairy/dairy/home-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/diary/our_diary/home-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dairy/src/main/resources/com/dairy/dairy/mood-graph-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/moodGraph/mood-graph-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dairy/src/main/resources/com/dairy/dairy/my-diary-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/diary/my_diary/my-diary-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dairy/src/main/resources/com/dairy/dairy/our-diary-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/diary/our_diary/our-diary-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dairy/src/main/resources/com/dairy/dairy/settings-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/userInfo/settings-view.fxml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="module-info" />
+        <option value="Enum" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -16,52 +104,87 @@
   <component name="GitHubPullRequestSearchHistory">{
   &quot;lastFilter&quot;: {
     &quot;state&quot;: &quot;OPEN&quot;,
-    &quot;assignee&quot;: &quot;MWMW1133&quot;
+    &quot;assignee&quot;: &quot;kingoreu&quot;
   }
 }</component>
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;https://github.com/kingoreu/Share-your-Dairy.git&quot;,
-    &quot;accountId&quot;: &quot;20bc2043-6893-4e62-9697-96436db80c29&quot;
+    &quot;accountId&quot;: &quot;bb51fbb8-6358-4de2-bc7c-38bfd29c6af1&quot;
   }
 }</component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHomeTypeForPersistence" value="WRAPPER" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
   <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 8
+  &quot;associatedIndex&quot;: 2
 }</component>
-  <component name="ProjectId" id="30wnc1o6UKJMN18VsMSiQuTu2kQ" />
+  <component name="ProjectId" id="30w9NgFPSzmvwkw8yI3ZDWzXWuQ" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
-    &quot;Application.run.executor&quot;: &quot;Run&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;#2 on 이민우&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;sohyun&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Java/myjava/Share-your-Dairy&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/dairy/src/main/resources/com/share/dairy/frontend&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+    &quot;project.structure.last.edited&quot;: &quot;모듈&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.JavaFX&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;,
+    &quot;데이터베이스 스크립트.dairy_trigger.sql.executor&quot;: &quot;Run&quot;,
+    &quot;애플리케이션.HelloApplication.executor&quot;: &quot;Run&quot;,
+    &quot;애플리케이션.Launcher.executor&quot;: &quot;Run&quot;,
+    &quot;애플리케이션.TestDB.executor&quot;: &quot;Run&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
+    ],
+    &quot;RunConfigurationTargetLRU&quot;: [
+      &quot;96bcc0e0-4dda-4b67-ba52-66e7852b34c9&quot;,
+      &quot;96bcc0e0-4dda-4b67-ba52-66e7852b34c9/schema/\&quot;dairy\&quot;&quot;
+    ]
   }
 }</component>
-  <component name="RunManager">
-    <configuration name="run" type="Application" factoryName="Application">
-      <option name="ALTERNATIVE_JRE_PATH" value="21" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-      <option name="MAIN_CLASS_NAME" value="com.dairy.dairy.HelloApplication" />
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\dairy\src\main\resources\com\share\dairy\frontend" />
+      <recent name="C:\dairy\src\main\java\com\share\dairy\frontend" />
+      <recent name="C:\dairy\src\main\java\com\share\dairy\backend" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\dairy\src\main\resources\fxml\moodGraph" />
+      <recent name="C:\dairy\src\main\resources\fxml\diary\our_diary" />
+      <recent name="C:\dairy\src\main\resources\fxml\mainFrame" />
+      <recent name="C:\dairy\src\main\resources\fxml\userInfo" />
+      <recent name="C:\dairy\src\main\resources\fxml\diary\buddy_diary" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.share.dairy" />
+    </key>
+  </component>
+  <component name="RunManager" selected="데이터베이스 스크립트.dairy_trigger.sql">
+    <configuration name="TestDB" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.share.dairy.TestDB" />
       <module name="dairy" />
-      <option name="VM_PARAMETERS" value="--module-path &quot;C:\Java\javafx-sdk-21.0.8\lib&quot; --add-modules javafx.controls,javafx.fxml " />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/dairy" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.dairy.dairy.*" />
+          <option name="PATTERN" value="com.share.dairy.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -69,27 +192,51 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="dairy_trigger.sql" type="DatabaseScript" editBeforeRun="true" temporary="true" nameIsGenerated="true">
+      <script-file value="$PROJECT_DIR$/src/sql/dairy_trigger.sql" />
+      <script-mode>FILE</script-mode>
+      <data-source id="96bcc0e0-4dda-4b67-ba52-66e7852b34c9" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="애플리케이션.TestDB" />
+        <item itemvalue="데이터베이스 스크립트.dairy_trigger.sql" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9823dce3aa75-bf35d07a577b-intellij.indexing.shared.core-IU-252.23892.409" />
-        <option value="bundled-js-predefined-d6986cc7102b-e03c56caf84a-JavaScript-IU-252.23892.409" />
+        <option value="bundled-jdk-9823dce3aa75-a94e463ab2e7-intellij.indexing.shared.core-IU-243.25659.59" />
+        <option value="bundled-js-predefined-d6986cc7102b-1632447f56bf-JavaScript-IU-243.25659.59" />
       </set>
     </attachedChunks>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="애플리케이션 수준" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
-    <task active="true" id="Default" summary="Default task">
-      <changelist id="c8d60022-39d6-44db-9ec4-bef16608d6f3" name="Changes" comment="" />
-      <created>1754547578688</created>
+    <task active="true" id="Default" summary="디폴트 작업">
+      <changelist id="ce0d884a-17a6-433f-98e7-bc5d2721af8c" name="변경" comment="" />
+      <created>1754527730353</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1754547578688</updated>
-      <workItem from="1754547579784" duration="1471000" />
+      <updated>1754527730353</updated>
+      <workItem from="1754527731603" duration="3433000" />
+      <workItem from="1754536903836" duration="219000" />
+      <workItem from="1754537133565" duration="14078000" />
+      <workItem from="1754612512663" duration="12382000" />
+      <workItem from="1754631860346" duration="837000" />
+      <workItem from="1754632701680" duration="9463000" />
+      <workItem from="1754766324143" duration="7419000" />
+      <workItem from="1754872057806" duration="2705000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
