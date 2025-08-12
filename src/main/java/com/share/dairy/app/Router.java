@@ -24,6 +24,9 @@ public class Router {
                     // ✅ 실제 위치는 diary/diary_hub/diary-hub-view.fxml
                     fxml = "/fxml/diary/diary_hub/diary-hub-view.fxml";
                     break;
+                case "OurDiary": // ✅ 추가
+                    fxml = "/fxml/diary/our_diary/our-diary-view.fxml";
+                    break;
                 default:
                     throw new IllegalArgumentException("Unknown view: " + name);
             }

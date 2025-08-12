@@ -25,7 +25,7 @@ public class HelloApplication extends Application {
                             "server.port", "8080",
                             "spring.datasource.url", "jdbc:mysql://localhost:3306/diary?serverTimezone=Asia/Seoul",
                             "spring.datasource.username", "root",
-                            "spring.datasource.password", "sohyun"
+                            "spring.datasource.password", "1234"
                     ))
                     .run();
         });
