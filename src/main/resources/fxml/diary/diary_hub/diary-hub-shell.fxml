@@ -19,7 +19,7 @@
     <top>
         <HBox spacing="12" alignment="CENTER_LEFT" style="-fx-padding: 14 18;">
             <Separator styleClass="top-sep"/> <!-- 상단 구분선 -->
-            <Button onAction="#showDiaryHub" style="-fx-background-color: transparent; -fx-padding: 6;">
+            <Button onAction="#showMain" style="-fx-background-color: transparent; -fx-padding: 6;">
                 <tooltip><Tooltip text="Home"/></tooltip>
                 <graphic>
                     <ImageView fitWidth="22" fitHeight="22" preserveRatio="true">

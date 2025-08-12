@@ -43,7 +43,7 @@ public class DiaryHubController {
     @FXML private void showMyDiary()    { setCenter("/fxml/diary/my_diary/my-diary-view.fxml"); }
     @FXML private void showOurDiary()   { setCenter("/fxml/diary/our_diary/our-diary-view.fxml"); }
     @FXML private void showBuddyDiary() { setCenter("/fxml/diary/buddy_diary/buddy-diary-view.fxml"); }
-    
+    @FXML private void showMain() { setCenter("/fxml/mainFrame/Main.fxml"); }
     /** 중앙 영역 교체 (FAB/Top/Left는 그대로) */
     private void setCenter(String fxml) {
         try {

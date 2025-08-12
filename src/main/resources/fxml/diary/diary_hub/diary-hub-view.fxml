@@ -20,7 +20,7 @@
 <top>
     <VBox>
         <HBox spacing="12" alignment="CENTER_LEFT" style="-fx-padding: 14 18;">
-            <Button fx:id="homeButton" onAction="#showDiaryHub"
+            <Button fx:id="homeButton" onAction="#showMain"
                     style="-fx-background-color: transparent; -fx-padding: 6;">
                 <tooltip><Tooltip text="Home"/></tooltip>
                 <graphic>
@@ -31,7 +31,7 @@
             </Button>
             <Label fx:id="titleLabel" text="Diary Hub" styleClass="title"/>
             <Pane HBox.hgrow="ALWAYS"/>
-            <Button text="New Diary" onAction="#showMyDiary"/>
+           
         </HBox>
         <!-- ★ 상단 구분선 -->
         <Separator styleClass="top-sep"/>
