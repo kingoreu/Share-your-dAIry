@@ -1,5 +1,7 @@
 package com.share.dairy.controller;
 
+import com.share.dairy.app.Router;
+import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -7,6 +9,8 @@ import javafx.scene.Scene;
 import javafx.scene.control.Alert;
 import javafx.scene.input.KeyCode;
 import javafx.scene.input.KeyEvent;
+import javafx.scene.layout.Region;
+import javafx.scene.layout.StackPane;
 import javafx.scene.layout.StackPane;
 import javafx.stage.Stage;
 
@@ -20,7 +24,17 @@ import java.net.URL;
  */
 public class DiaryHubController {
 
-    @FXML private StackPane content;
+    @FXML private StackPane content;       // 쉘의 중앙 StackPane (FAB 포함)
+    @FXML private StackPane centerHolder;  // ★ 전환 대상 컨테이너
+
+    // ESC → 홈
+    private final EventHandler<KeyEvent> escFilter = e -> {
+        if (e.getCode() == KeyCode.ESCAPE) {
+            System.out.println("[ESC] go Home");
+            Router.go("Home");
+            e.consume();
+        }
+    };
 
     @FXML
     public void initialize() {
@@ -36,62 +50,59 @@ public class DiaryHubController {
             }
         });
 
+        // ESC 필터 등록/해제
+        content.sceneProperty().addListener((obs, oldScene, scene) -> {
+            if (oldScene != null) oldScene.removeEventFilter(KeyEvent.KEY_PRESSED, escFilter);
+            if (scene != null)     scene.addEventFilter(KeyEvent.KEY_PRESSED, escFilter);
+        });
+
         // 포커스 유지(ESC 안정적으로 잡기 위함)
         content.setFocusTraversable(true);
         content.requestFocus();
 
-        // 허브 초기 화면은 비워둠(5-1)
-        content.getChildren().clear();
+        
+        // 앱 진입 시 허브 리스트를 센터에 표시
+        showDiaryHub();
     }
 
-    // ───────────────── 버튼 핸들러(중앙만 교체) ─────────────────
-    @FXML private void showMyDiary()    { setCenterSafe("/fxml/diary/my_diary/my-diary-view.fxml"); }
-    @FXML private void showOurDiary()   { setCenterSafe("/fxml/diary/our_diary/our-diary-view.fxml"); }
-    @FXML private void showBuddyDiary() { setCenterSafe("/fxml/diary/buddy_diary/buddy-diary-view.fxml"); }
-
-    // ───────────────── 중앙 영역 교체 (안정판) ─────────────────
-    private void setCenterSafe(String fxml) {
+    // 좌/상단 버튼 핸들러 — "센터만" 교체
+    @FXML private void showDiaryHub()   { setCenter("/fxml/diary/diary_hub/hub-list.fxml"); }
+    @FXML private void showMyDiary()    { setCenter("/fxml/diary/my_diary/my-diary-view.fxml"); }
+    @FXML private void showOurDiary()   { setCenter("/fxml/diary/our_diary/our-diary-view.fxml"); }
+    @FXML private void showBuddyDiary() { setCenter("/fxml/diary/buddy_diary/buddy-diary-view.fxml"); }
+    
+    /** 중앙 영역 교체 (FAB/Top/Left는 그대로) */
+    private void setCenter(String fxml) {
         try {
             URL url = getClass().getResource(fxml);
-            System.out.println("[Hub] load center: " + fxml + " -> " + url);
-            if (url == null) {
-                alert("FXML not found:\n" + fxml);
-                return;
+            if (url == null) throw new IllegalStateException("FXML not found: " + fxml);
+
+            FXMLLoader loader = new FXMLLoader(url);
+            Parent node = loader.load();
+
+            centerHolder.getChildren().setAll(node);
+
+            if (node instanceof Region r) {
+                r.prefWidthProperty().bind(centerHolder.widthProperty());
+                r.prefHeightProperty().bind(centerHolder.heightProperty());
             }
-            Parent node = FXMLLoader.load(url);
-            content.getChildren().setAll(node);
-            content.requestFocus(); // ESC 포커스 유지
+            content.requestFocus();
         } catch (Exception e) {
             e.printStackTrace();
-            alert("Load failed:\n" + fxml + "\n" + e.getClass().getSimpleName() + ": " + e.getMessage());
         }
     }
 
-    // ───────────────── 씬 전체 교체(ESC/홈 복귀용) ─────────────────
-    private void switchTo(String fxml) {
+    /* ▼ 옵션: 허브 전체 FXML을 통째로 띄우고 싶을 때
+    @FXML private void showDiaryHubFull() { replaceRoot("/fxml/diary/diary_hub/diary-hub-shell.fxml"); }
+    private void replaceRoot(String fxml) {
         try {
-            URL url = getClass().getResource(fxml);
-            System.out.println("[Hub] switchTo: " + fxml + " -> " + url);
-            if (url == null) {
-                alert("FXML not found:\n" + fxml);
-                return;
-            }
-            Parent root = FXMLLoader.load(url);
-            Stage st = (Stage) content.getScene().getWindow();
-            Scene sc = new Scene(root, st.getWidth(), st.getHeight());
-            URL css = getClass().getResource("/css/style.css");
-            if (css != null) sc.getStylesheets().add(css.toExternalForm());
-            st.setScene(sc);
+            var url = getClass().getResource(fxml);
+            if (url == null) throw new IllegalStateException("FXML not found: " + fxml);
+            var root = new FXMLLoader(url).load();
+            content.getScene().setRoot(root);
         } catch (Exception e) {
             e.printStackTrace();
-            alert("Scene switch failed:\n" + fxml + "\n" + e.getClass().getSimpleName() + ": " + e.getMessage());
         }
     }
-
-    // ───────────────── 공통 알림 ─────────────────
-    private static void alert(String msg) {
-        Alert a = new Alert(Alert.AlertType.ERROR, msg);
-        a.setHeaderText(null);
-        a.showAndWait();
-    }
+    */
 }
