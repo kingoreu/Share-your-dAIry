@@ -1,31 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.Insets?>
-<?import javafx.scene.chart.*?>
-<?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
 
-<BorderPane xmlns:fx="http://javafx.com/fxml"
+<!-- 가운데 콘텐츠만 (상단/허브 좌측 버튼은 건드리지 않음) -->
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
             fx:controller="com.share.dairy.controller.BuddyDiaryController"
-            stylesheets= "/css/style.css"
-            style="-fx-background-color: #fde7f0;">
+            prefWidth="700" prefHeight="560"
+            style="-fx-background-color: transparent;">
 
-    <!-- 상단: 제목 -->
-    <top>
-        <VBox alignment="CENTER">
-            <Label text="Mood  Graph"
-                   style="-fx-font-size: 28px; -fx-font-family: 'Pixel'; -fx-padding: 20; -fx-text-fill: black;"/>
-            <Separator />
-        </VBox>
-    </top>
+    <HBox spacing="12"
+          AnchorPane.topAnchor="0"
+          AnchorPane.leftAnchor="0"
+          AnchorPane.rightAnchor="0"
+          AnchorPane.bottomAnchor="0">
 
-    <!-- 좌측: 버튼 메뉴 -->
-    <left>
-        <VBox spacing="20" alignment="CENTER" style="-fx-padding: 30;">
-            <ToggleButton fx:id="weekToggle" text="1week" onAction="#loadWeekData" />
-            <ToggleButton fx:id="days15Toggle" text="15days" onAction="#load15DaysData" />
-            <ToggleButton fx:id="monthToggle" text="1month" onAction="#loadMonthData" />
-        </VBox>
-    </left>
+        <!-- ◀ 좌측: 친구 리스트 영역 (폭 고정) -->
+        <StackPane prefWidth="240" minWidth="240" maxWidth="240"
+                   style="-fx-background-color:#E9CFE5; -fx-background-radius:16; -fx-padding:10;"
+                   VBox.vgrow="ALWAYS">
+            <ScrollPane fitToWidth="true" hbarPolicy="NEVER" vbarPolicy="AS_NEEDED"
+                        style="-fx-background-color: transparent;"
+                        maxHeight="Infinity" VBox.vgrow="ALWAYS">
+                <VBox fx:id="buddyList" spacing="10" style="-fx-padding:6;"
+                      maxHeight="Infinity" VBox.vgrow="ALWAYS"/>
+            </ScrollPane>
+        </StackPane>
 
-</BorderPane>
+        <!-- 중앙 세로 구분선 (폭 고정) -->
+        <VBox prefWidth="4" minWidth="4" maxWidth="4"
+              style="-fx-background-color:#594D57; -fx-background-radius:2;"/>
+
+        <!-- ▶ 우측: 날짜별 일기 2×2 카드 그리드 -->
+        <ScrollPane fitToWidth="true" hbarPolicy="NEVER" vbarPolicy="AS_NEEDED"
+                    style="-fx-background-color: transparent;"
+                    HBox.hgrow="ALWAYS">
+            <!-- 살짝 톤 있는 배경 + 라운드 -->
+            <AnchorPane style="-fx-background-color:#F3EFF2; -fx-background-radius:12; -fx-padding:18;">
+                <GridPane fx:id="entriesGrid"
+                          AnchorPane.topAnchor="8" AnchorPane.leftAnchor="8"
+                          AnchorPane.rightAnchor="8" AnchorPane.bottomAnchor="8"
+                          hgap="24" vgap="24">
+                    <columnConstraints>
+                        <ColumnConstraints percentWidth="50"/>
+                        <ColumnConstraints percentWidth="50"/>
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints percentHeight="50"/>
+                        <RowConstraints percentHeight="50"/>
+                    </rowConstraints>
+                </GridPane>
+            </AnchorPane>
+        </ScrollPane>
+    </HBox>
+</AnchorPane>
