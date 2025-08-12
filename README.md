@@ -25,6 +25,7 @@ mainscreen 구현은 했는데 아직 장애가 좀 있다 사진 위치 수정 
 2. 실행 시 루트 디렉토리에서 mvn clean javafx:run
 3. maven reload도 해주면 좋음
 4. pom.xml은 이미 추가되어 있지만 하단에 작성함. (parent, dependency, plugin)
+5. **module-info.java 파일을 삭제**해야 스프링까지 연결될 거임 아마도.. (저는 삭제했어요)
 ```
 <parent>
         <groupId>org.springframework.boot</groupId>
