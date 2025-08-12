@@ -20,7 +20,49 @@ mainscreen 구현은 했는데 아직 장애가 좀 있다 사진 위치 수정 
 6. DBTest 파일을 통해 연결 확인
 
 -----------
-# Server 연결
-만드는 중.. 백업용으로 일단 올립니다.
-dao에 따라 service랑 controller 코드가 변경될 수 있습니다. 
+# Server 연결 (Spring 3.3.2 사용) 08.12
+1. sohyun 브랜치 코드를 그대로 가져와서 연결해도 가능
+2. 실행 시 루트 디렉토리에서 mvn clean javafx:run
+3. maven reload도 해주면 좋음
+4. pom.xml은 이미 추가되어 있지만 하단에 작성함. (parent, dependency, plugin)
+```
+<parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>3.3.2</version>
+        <relativePath/> <!-- lookup parent from repository -->
+    </parent>
+// parent는 properties보다 상단에 위치해야 함.
+...
+        <!-- Spring Boot Web (REST API) -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+
+        <!-- Spring Boot JDBC -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-jdbc</artifactId>
+        </dependency>
+
+        <!-- JSON 처리 (Jackson) - spring-boot-starter-web에도 포함되어 있음 -->
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+        </dependency>
+
+        <!-- Lombok (디버깅) -->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <optional>true</optional>
+        </dependency>
+...
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+```
+
 
