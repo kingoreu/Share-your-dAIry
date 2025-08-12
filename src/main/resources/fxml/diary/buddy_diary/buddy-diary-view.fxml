@@ -3,7 +3,6 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.control.*?>
 
-<!-- 가운데 콘텐츠만 (상단/허브 좌측 버튼은 건드리지 않음) -->
 <AnchorPane xmlns="http://javafx.com/javafx"
             xmlns:fx="http://javafx.com/fxml"
             fx:controller="com.share.dairy.controller.BuddyDiaryController"
@@ -16,7 +15,7 @@
           AnchorPane.rightAnchor="0"
           AnchorPane.bottomAnchor="0">
 
-        <!-- ◀ 좌측: 친구 리스트 영역 (폭 고정) -->
+        <!-- 좌측: 친구 리스트 (폭 고정) -->
         <StackPane prefWidth="240" minWidth="240" maxWidth="240"
                    style="-fx-background-color:#E9CFE5; -fx-background-radius:16; -fx-padding:10;"
                    VBox.vgrow="ALWAYS">
@@ -28,15 +27,9 @@
             </ScrollPane>
         </StackPane>
 
-        <!-- 중앙 세로 구분선 (폭 고정) -->
-        <VBox prefWidth="4" minWidth="4" maxWidth="4"
-              style="-fx-background-color:#594D57; -fx-background-radius:2;"/>
-
-        <!-- ▶ 우측: 날짜별 일기 2×2 카드 그리드 -->
+        <!-- 우측: 2×2 카드 -->
         <ScrollPane fitToWidth="true" hbarPolicy="NEVER" vbarPolicy="AS_NEEDED"
-                    style="-fx-background-color: transparent;"
-                    HBox.hgrow="ALWAYS">
-            <!-- 살짝 톤 있는 배경 + 라운드 -->
+                    style="-fx-background-color: transparent;" HBox.hgrow="ALWAYS">
             <AnchorPane style="-fx-background-color:#F3EFF2; -fx-background-radius:12; -fx-padding:18;">
                 <GridPane fx:id="entriesGrid"
                           AnchorPane.topAnchor="8" AnchorPane.leftAnchor="8"
