@@ -5,49 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ce0d884a-17a6-433f-98e7-bc5d2721af8c" name="변경" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/share/dairy/api/diary/DiaryAttachmentController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/share/dairy/api/diary/DiaryCommentController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/share/dairy/api/diary/DiaryRestController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/share/dairy/api/friend/FriendRestController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/share/dairy/api/sharedDiary/MemberRestController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/share/dairy/api/sharedDiary/SharedDiaryRestController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/share/dairy/api/user/UserRestController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/share/dairy/dao/diary/DiaryCommentDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/share/dairy/dto/diary/diaryAttachment/CreateRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/share/dairy/dto/diary/diaryAttachment/ResponseDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/share/dairy/dto/diary/diaryComment/CreateRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/share/dairy/dto/diary/diaryComment/ResponseDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/share/dairy/dto/diary/diaryComment/UpdateRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/share/dairy/dto/diary/diaryEntry/CreateRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/share/dairy/dto/diary/diaryEntry/ResponseDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/share/dairy/dto/diary/diaryEntry/ShareRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/share/dairy/dto/diary/diaryEntry/UpdateRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/share/dairy/dto/friend/FriendRequestDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/share/dairy/dto/friend/FriendResponseDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/share/dairy/dto/sharedDiary/MemberAddRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/share/dairy/dto/sharedDiary/MemberResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/share/dairy/dto/sharedDiary/SharedDiaryCreateRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/share/dairy/dto/sharedDiary/SharedDiaryResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/share/dairy/dto/sharedDiary/SharedDiaryUpdateRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/share/dairy/dto/user/UserCreateRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/share/dairy/dto/user/UserResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/share/dairy/dto/user/UserUpdateRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/share/dairy/service/diary/DiaryAttachmentService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/share/dairy/service/diary/DiaryCommentService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/share/dairy/service/diary/DiaryService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/share/dairy/service/sharedDiary/MemberService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/share/dairy/service/sharedDiary/SharedDiaryService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/share/dairy/service/user/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/share/dairy/controller/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/share/dairy/controller/MainController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/share/dairy/dao/diary/DiaryAttachmentDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/share/dairy/dao/diary/DiaryAttachmentDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/share/dairy/dao/diary/DiaryEntryDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/share/dairy/dao/diary/DiaryEntryDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/share/dairy/dao/friend/FriendshipDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/share/dairy/dao/friend/FriendshipDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/share/dairy/dao/sharedDiary/SharedDiaryDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/share/dairy/dao/sharedDiary/SharedDiaryDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/share/dairy/dao/sharedDiary/SharedDiaryMemberDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/share/dairy/dao/sharedDiary/SharedDiaryMemberDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/share/dairy/dao/user/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/share/dairy/dao/user/UserDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/share/dairy/service/friend/FriendshipService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/share/dairy/service/friend/FriendshipService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/share/dairy/api/diary/DiaryAttachmentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/share/dairy/api/diary/DiaryAttachmentController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/share/dairy/api/diary/DiaryCommentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/share/dairy/api/diary/DiaryCommentController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/share/dairy/api/friend/FriendRestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/share/dairy/api/friend/FriendRestController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,10 +42,10 @@
     &quot;accountId&quot;: &quot;bb51fbb8-6358-4de2-bc7c-38bfd29c6af1&quot;
   }
 }</component>
-  <component name="KubernetesApiPersistence"><![CDATA[{}]]></component>
-  <component name="KubernetesApiProvider"><![CDATA[{
-  "isMigrated": true
-}]]></component>
+  <component name="KubernetesApiPersistence">{}</component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
@@ -149,7 +111,7 @@
       <recent name="com.share.dairy" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="데이터베이스 스크립트.dairy_trigger.sql">
     <configuration name="TestDB" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.share.dairy.TestDB" />
       <module name="dairy" />
@@ -200,7 +162,8 @@
       <workItem from="1754632701680" duration="9463000" />
       <workItem from="1754766324143" duration="7419000" />
       <workItem from="1754872057806" duration="2705000" />
-      <workItem from="1754957300596" duration="22450000" />
+      <workItem from="1754957300596" duration="22735000" />
+      <workItem from="1754987672759" duration="111000" />
     </task>
     <servers />
   </component>
