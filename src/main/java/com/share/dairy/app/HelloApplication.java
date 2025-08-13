@@ -14,7 +14,7 @@ import java.util.Map;
 
 public class HelloApplication extends Application {
     
-      private ConfigurableApplicationContext springContext;
+    private ConfigurableApplicationContext springContext;
 
     @Override
     public void init() {
@@ -33,26 +33,23 @@ public class HelloApplication extends Application {
         serverThread.start();
     }
 
-
     @Override
     public void start(Stage stage) throws Exception {
-        // 클래스패스 루트 기준으로 절대경로 사용
-         Parent root = FXMLLoader.load(
-       getClass().getResource("/fxml/mainFrame/Main.fxml")
-        );
+        // 클래스패스 루트 기준 절대경로로 FXML 직접 로드
+        Parent root = FXMLLoader.load(getClass().getResource("/fxml/mainFrame/Main.fxml"));
         Scene scene = new Scene(root, 800, 600);
         stage.setTitle("공유일기");
         stage.setScene(scene);
         stage.show();
     }
+
     @Override
     public void stop() {
-            if (springContext != null) {
+        if (springContext != null) {
             springContext.close();
-            }
-         Platform.exit();
+        }
+        Platform.exit();
     }
-
 
     public static void main(String[] args) {
         launch();

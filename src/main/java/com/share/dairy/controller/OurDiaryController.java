@@ -28,7 +28,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
-
+import javafx.geometry.Insets;
 import java.util.stream.Collectors;
 
 /**
@@ -62,23 +62,33 @@ public class OurDiaryController {
     /* ================== 라이프사이클 ================== */
 
     @FXML
-    public void initialize() {
-        // 1) ESC → 허브(5-1) 복귀. Scene 준비되면 키 이벤트 필터 등록
-        cardsFlow.sceneProperty().addListener((obs, oldScene, scene) -> {
-            if (scene != null) {
-                scene.addEventFilter(KeyEvent.KEY_PRESSED, e -> {
-                    if (e.getCode() == KeyCode.ESCAPE) {
-                        goHub();
-                        e.consume();
-                    }
-                });
-            }
-        });
-        
-        // 2) 초기 카드 렌더링: 더미 또는 DB
-        List<DiaryCardData> data = FAKE_DATA ? fakeCards() : fetchFromDB();
-        renderCards(data);
-    }
+public void initialize() {
+    // 1) ESC → 허브 복귀
+    cardsFlow.sceneProperty().addListener((obs, oldScene, scene) -> {
+        if (scene != null) {
+            scene.addEventFilter(KeyEvent.KEY_PRESSED, e -> {
+                if (e.getCode() == KeyCode.ESCAPE) {
+                    goHub();
+                    e.consume();
+                }
+            });
+        }
+    });
+
+    // 2) Our Diary 카드 영역 레이아웃/배경
+    cardsFlow.setHgap(36);                // 가로 간격
+    cardsFlow.setVgap(36);                // 세로 간격
+    cardsFlow.setPadding(new Insets(26)); // 패딩
+    cardsFlow.setStyle(
+        "-fx-background-color: rgba(255,255,255,0.40); -fx-background-radius: 14;"
+    );
+
+    // 3) 초기 렌더링
+    List<DiaryCardData> data = FAKE_DATA ? fakeCards() : fetchFromDB();
+    renderCards(data);
+}
+
+
 
     /* ================== 네비게이션 ================== */
 
@@ -168,44 +178,42 @@ public void onNew() {
         }
     }
 
-    /** 단일 카드 UI 구성 — 제목/멤버/시작일 + 클릭 시 안내 */
-    private Node buildCard(DiaryCardData d) {
-        VBox card = new VBox(8);
-        card.setPadding(new Insets(16));
-        card.setPrefWidth(200); // FlowPane에서 줄바꿈 자연스럽게
+// 개별 카드 UI 구성 (설계도 느낌)
+private Node buildCard(DiaryCardData d) {
+    VBox card = new VBox(8);
+    card.setPadding(new Insets(16));
+    card.setPrefWidth(240); // 카드 폭 고정
+    // 흰 카드 + 둥근 모서리 + 부드러운 그림자
+    card.setStyle(
+        "-fx-background-color: white;" +
+        "-fx-background-radius:18;" +
+        "-fx-effect: dropshadow(gaussian, rgba(0,0,0,0.12), 12, 0, 0, 4);"
+    );
 
-        card.setStyle(
-            "-fx-background-color: white;" +
-            "-fx-background-radius: 18;" +
-            "-fx-effect: dropshadow(gaussian, rgba(0,0,0,0.12), 12, 0, 0, 4);"
-        );
+    // 제목
+    Label title = new Label(d.title);
+    title.setStyle("-fx-font-size:16; -fx-font-weight:800; -fx-text-fill:#2d2150;");
 
-        // 제목
-        Label title = new Label(d.title);
-        title.setStyle("-fx-font-size: 18; -fx-font-weight: bold;");
-
-        // 멤버 목록(간단한 텍스트 라인들; 이후 이미지/아바타로 개선 가능)
-        VBox membersBox = new VBox(6);
-        for (String m : d.members) {
-            Label row = new Label("👤 " + m);
-            row.setStyle("-fx-font-size: 13;");
-            membersBox.getChildren().add(row);
-        }
-
-        // 시작 날짜
-        Label start = new Label("start " + d.startDate);
-        start.setStyle("-fx-font-size: 12; -fx-text-fill: #666;");
-
-        // 클릭 시(상세 이동은 추후 라우팅 연결)
-        card.setOnMouseClicked(e ->
-            new Alert(Alert.AlertType.INFORMATION, d.title + " 열기(상세는 추후 연결)").show()
-        );
-
-        card.getChildren().addAll(title, membersBox, start);
-        return card;
+    // 멤버 목록
+    VBox membersBox = new VBox(6);
+    for (String m : d.members) {
+        Label row = new Label("👤 " + m);
+        row.setStyle("-fx-font-size:13; -fx-text-fill:#2d2150;");
+        membersBox.getChildren().add(row);
     }
 
-    /* ================== 데이터 소스 ================== */
+    // 시작 날짜
+    Label start = new Label("start " + d.startDate);
+    start.setStyle("-fx-font-size:12; -fx-text-fill:#6b6b6b;");
+
+    // 클릭 안내 (유지)
+    card.setOnMouseClicked(e ->
+        new Alert(Alert.AlertType.INFORMATION, d.title + " 열기(상세는 추후 연결)").show()
+    );
+
+    card.getChildren().addAll(title, membersBox, start);
+    return card;
+}
 
     /** 디자인 확인용 더미 카드 */
     private List<DiaryCardData> fakeCards() {
@@ -243,3 +251,4 @@ public void onNew() {
         }
     }
 }
+
