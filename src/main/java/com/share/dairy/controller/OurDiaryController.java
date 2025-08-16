@@ -67,7 +67,8 @@ public void initialize() {
     cardsFlow.sceneProperty().addListener((obs, oldScene, scene) -> {
         if (scene != null) {
             scene.addEventFilter(KeyEvent.KEY_PRESSED, e -> {
-                if (e.getCode() == KeyCode.ESCAPE) {
+                if (e.getCode() == KeyCode.ESCAPE) 
+                {
                     goHub();
                     e.consume();
                 }

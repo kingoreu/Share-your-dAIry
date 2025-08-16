@@ -2,7 +2,6 @@
 <?import java.net.URL?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
-<?import javafx.scene.control.Separator?>
 <?import javafx.scene.layout.*?>
 
 <BorderPane xmlns:fx="http://javafx.com/fxml"
@@ -25,15 +24,19 @@
 
     <!-- Left Menu -->
     <left>
-        <VBox spacing="12" style="-fx-padding: 20;" styleClass="sidebar">
+        <!-- ▼ 변경 포인트: fx:id/id="sidebar" 부여 + 맨 위에 스페이서 추가 + 하단 구분선 제거 -->
+        <VBox fx:id="sidebar" id="sidebar"
+              spacing="30"
+              style="-fx-padding: 20 16 8 16;"
+              styleClass="sidebar">
+            <Region VBox.vgrow="ALWAYS"/> <!-- 윗공간을 먹어서 버튼 3개를 아래로 밀어줌 -->
             <Button text="MY DIARY"    onAction="#showDiaryHub"/>
             <Button text="OUR DIARY"   onAction="#showOurDiary"/>
             <Button text="BUDDY DIARY" onAction="#showBuddyDiary"/>
-            <Separator/>
         </VBox>
     </left>
 
-    <!-- Center: centerHolder만 유지 (FAB 없음) -->
+    <!-- Center: centerHolder만 유지 -->
     <center>
         <StackPane fx:id="content" BorderPane.alignment="CENTER">
             <StackPane fx:id="centerHolder"/>

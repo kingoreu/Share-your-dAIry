@@ -96,7 +96,7 @@ public class CreateShareDiaryDialogController {
         Platform.runLater(() -> {
             // Scene 생성 이후에만 이벤트 등록 가능
             titleField.getScene().addEventFilter(KeyEvent.KEY_PRESSED, e -> {
-                if (e.getCode() == KeyCode.ESCAPE) onCancel();
+              
             });
         });
     }
